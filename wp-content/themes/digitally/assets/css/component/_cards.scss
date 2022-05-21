@@ -1,0 +1,328 @@
+.card-post {
+    margin-bottom: rem(60);
+
+    .card-post__back {
+        background-color: $grigio;
+        height: 100%;
+        border-radius: rem(16);
+        overflow: hidden;
+    }
+
+    .article-image {
+        overflow: hidden;
+        background-color: $grigio;
+
+        a {
+            display: block;
+
+            &:focus {
+                border: 4px solid $primario;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .article-text {
+        padding: rem(35) rem(25);
+        background-color: $grigio;
+    }
+
+    h2 {
+        font-size: rem(30);
+        margin-bottom: rem(4);
+
+        a {
+            color: $nero;
+            text-decoration: none;
+
+            &:hover {
+                color: $primarioscuro;
+            }
+        }
+    }
+
+    time {
+        font-size: rem(15);
+        color: $primario;
+    }
+
+    .excerpt {
+        margin-top: rem(35);
+        margin-bottom: rem(35);
+
+        p {
+            font-size: rem(18);
+            line-height: 1.5;
+            color: $nero;
+        }
+    }
+
+    &.sticky {
+        .card-post__back {
+            background-color: $primario;
+        }
+
+        .article-text {
+            background-color: $primario;
+
+            * {
+                color: $bianco !important;
+            }
+
+            .cta {
+                background-color: $bianco;
+                color: $primario !important;
+
+                &:hover {
+                    background-color: $primarioscuro;
+                    color: $bianco !important;
+                }
+            }
+        }
+    }
+}
+
+.card-person {
+    margin-bottom: rem(20);
+
+    .card-person__content {
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+        border-radius: rem(16);
+        overflow: hidden;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+            z-index: 1;
+        }
+
+        .person__text {
+            position: absolute;
+            bottom: rem(44);
+            left: rem(30);
+            z-index: 3;
+
+            h3 {
+                font-size: rem(30);
+                color: $bianco;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: rem(15);
+                color: $bianco;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.card-project {
+    position: relative;
+    margin-bottom: rem(10);
+    width: 100vw;
+    margin-left: -7.5vw;
+    overflow: hidden;
+    background-color: #000000;
+    max-width: none;
+
+    @media #{$underlarge} {
+        margin-left: calc(1.5rem * -.5);
+
+        .archive & {
+            margin-left: calc(1.5rem * -.5);
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+
+        &:focus {
+            border: 5px solid $primario;
+        }
+    }
+
+
+    .project__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: cover;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: 0.3s all $curve;
+        opacity: 0.4;
+    }
+
+    .project__text {
+        position: relative;
+        z-index: 3;
+        padding-top: rem(130);
+        padding-bottom: rem(100);
+    }
+
+    h3 {
+        font-size: rem(48);
+        color: $bianco;
+    }
+
+    p {
+        font-size: rem(20);
+        font-weight: 700;
+        margin-bottom: rem(15);
+        color: $bianco;
+        font-family: $fontsecondario;
+    }
+
+    &:hover {
+        .project__img {
+            transform: scale(1.2) rotate(-2deg);
+            opacity: 0.6;
+        }
+    }
+
+}
+
+
+.card-jobs {
+    margin-bottom: rem(20);
+
+    .card-jobs__content {
+        background-color: $grigio;
+        border-radius: rem(16);
+        padding: rem(66) rem(44);
+        color: $primario;
+
+        h3 {
+            margin-bottom: 0;
+            color: $primario;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $primarioscuro;
+                }
+            }
+        }
+
+        .jobs-details {
+            font-size: rem(20);
+            color: $primario;
+            font-family: $fontsecondario;
+            margin-bottom: rem(15);
+            font-weight: 700;
+        }
+
+        .jobs__cta {
+            text-align: right;
+
+            a {
+                text-decoration: none;
+            }
+
+            @media #{$underlarge} {
+                text-align: left;
+                margin-top: rem(32);
+            }
+        }
+    }
+}
+
+.card-testimony {
+    margin-bottom: rem(20);
+
+    .card-testimony__content {
+        background-color: $primarioscuro;
+        border-radius: rem(16);
+        padding: rem(45);
+        height: 100%;
+        box-sizing: border-box;
+
+        h3 {
+            color: $primario;
+            margin-bottom: 0;
+        }
+
+        .testimony__text {
+            color: $bianco;
+            font-size: rem(25);
+            line-height: 1.28;
+            margin-bottom: rem(50);
+            margin-top: rem(25);
+        }
+
+        .testimony__person {
+            p {
+                font-size: rem(15);
+                line-height: rem(22);
+                color: $bianco;
+                margin-bottom: 0;
+
+                strong {
+                    color: $primario;
+                    font-size: rem(20);
+                }
+            }
+        }
+    }
+}
+
+.card-service {
+    margin-bottom: rem(55);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media #{$large} {
+
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    .service__icon {
+        text-align: center;
+        color: $nero;
+    }
+
+    .has-background & {
+        * {
+            color: $bianco !important;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+$fontsecondario: 'Space Grotesk',
+sans-serif;
+$font: 'Inter',
+sans-serif;
+
+//COLORI
+$primario: var(--primary);
+$primarioscuro: var(--secondary);
+$bianco: #ffffff;
+$nero: #707070;
+$grigio: #F4F4F4;
+
+
+//EFFETTI
+$transizione: all cubic-bezier(0.4, 0.0, 0.2, 1);
+$curve: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+
+$nomob: "(min-width: 769px)";
+$xxlarge: "(min-width: 1400px)";
+$xlarge: "(min-width: 1200px)";
+$large: "(min-width: 992px)";
+$medium: "(min-width: 768px)";
+$small: "(min-width: 576px)";
+
+$underlarge: "(max-width: 991px)";
+$undersmall: "(max-width: 575px)";
+
+$undertablet: "(max-width: 767px)";
+
+
+$font-size: ("full": 18,
+  "xlarge": 18,
+  "large": 12,
+  "medium": 14,
+  "mobile": 15,
+);

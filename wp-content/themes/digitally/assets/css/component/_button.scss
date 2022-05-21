@@ -1,0 +1,90 @@
+.cta {
+    display: inline-block;
+    background-color: $primario;
+    border-radius: rem(35);
+    color: $bianco;
+    padding: rem(10) rem(20);
+    font-size: rem(16);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primarioscuro;
+        color: $bianco;
+    }
+}
+
+.wp-block-button__link {
+    font-size: 1rem;
+    margin-bottom: rem(20);
+    border-radius: 9999px !important;
+    color: $bianco;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.menu-item-has-children button,
+.page_item_has_children button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 1;
+
+    &>span {
+        display: inline-block;
+        width: 1.3rem;
+        height: .8rem;
+        position: relative;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: rotate(45deg) translateX(-50%);
+            border: solid $nero;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transition: 0.3s all $curve;
+        }
+    }
+
+    @media #{$underlarge} {
+        position: absolute;
+        right: 0.3rem;
+    }
+}
+
+.menu-item-has-children:last-child button,
+.page_item_has_children:last-child button {
+    @media #{$underlarge} {
+        top: 1.4rem
+    }
+}
+
+.menu-item-has-children.open>button,
+.menu-item-has-children:hover>button,
+.page_item_has_children.open>button,
+.page_item_has_children:hover>button {
+    &>span {
+        &:before {
+            left: 25%;
+            top: 25%;
+            transform: rotate(-135deg) translateX(-50%);
+
+            @media #{$underlarge} {
+                left: 21%;
+            }
+        }
+    }
+}

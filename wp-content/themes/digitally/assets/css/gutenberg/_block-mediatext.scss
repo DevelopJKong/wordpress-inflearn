@@ -1,0 +1,16 @@
+.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+    padding-left: 0;
+    padding-right: 16%;
+
+    @media #{$underlarge} {
+        padding-right: 0%;
+    }
+}
+
+@media #{$underlarge} {
+    .wp-block-media-text .wp-block-media-text__content {
+        padding-left: 0;
+        padding-right: 0%;
+        margin-top: 2rem;
+    }
+}

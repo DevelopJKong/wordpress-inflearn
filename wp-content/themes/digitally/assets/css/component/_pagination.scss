@@ -1,0 +1,37 @@
+.pagination {
+    text-align: center;
+    margin-top: rem(100);
+
+    a,
+    span {
+        background-color: $primario;
+        font-size: rem(20);
+        line-height: rem(38);
+        margin: 0 rem(14);
+        color: $bianco;
+        height: rem(38);
+        min-width: rem(38);
+        border-radius: rem(19);
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        padding-left: rem(10);
+        padding-right: rem(10);
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $primarioscuro;
+            color: $bianco;
+        }
+    }
+
+    span {
+        background-color: $primarioscuro;
+    }
+
+    @media #{$underlarge} {
+        &>* {
+            margin-bottom: rem(20) !important;
+        }
+    }
+}

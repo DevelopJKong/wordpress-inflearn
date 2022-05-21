@@ -1,0 +1,52 @@
+.wp-block-latest-comments {
+    padding-left: 0;
+}
+
+.wp-block-latest-comments__comment {
+    padding: rem(30);
+    background-color: $primario;
+    border-radius: rem(16);
+    margin: rem(15) 0;
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $bianco;
+
+    img {
+        height: rem(45);
+        width: auto;
+        border-radius: 50%;
+        margin-right: rem(10);
+        border: 2px solid $bianco;
+        margin-right: rem(40);
+    }
+
+    * {
+        color: $bianco !important;
+    }
+
+    a {
+        color: $primarioscuro !important;
+    }
+
+    time {
+        display: block !important;
+    }
+
+    p {
+        margin-bottom: 0;
+        margin-top: rem(20);
+    }
+
+    time {
+        font-size: rem(16) !important;
+        margin-top: rem(10) !important;
+    }
+}
+
+.wp-block-latest-comments__comment-excerpt {
+    margin-left: 0 !important;
+}
+
+.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+    margin-left: rem(80);
+}

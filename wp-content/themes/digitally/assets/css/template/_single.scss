@@ -1,0 +1,176 @@
+.single {
+    .title-page {
+        margin-bottom: rem(55);
+
+        strong {
+            font-size: rem(20);
+            display: inline-block;
+            margin-top: rem(20);
+            color: $nero;
+            font-weight: 700;
+        }
+    }
+
+    time,
+    .time {
+        font-size: rem(20);
+        display: inline-block;
+        margin-top: rem(20);
+        color: $nero;
+        font-weight: 700;
+    }
+
+    .single__thumbnail {
+        margin-left: calc(-50% - 15px);
+        width: calc(200% + 30px);
+        margin-bottom: rem(100) !important;
+        max-width: none;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center;
+               object-position: center;
+        }
+
+        @media #{$underlarge} {
+            margin-left: calc(1.5rem * -.5);
+            width: 100%;
+        }
+    }
+
+    .single_content {
+
+        .alignwide {
+            margin-left: -25%;
+            margin-right: -25%;
+            width: auto;
+
+            @media #{$underlarge} {
+                margin: 0;
+            }
+        }
+
+        .alignfull {
+            margin-left: calc(-50% - 15px);
+            width: calc(200% + 30px);
+            max-width: none;
+
+            @media #{$underlarge} {
+                width: 100vw;
+                margin-left: -1.5rem;
+            }
+        }
+
+        div.alignfull {
+            @media #{$underlarge} {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        &>* {
+            margin-bottom: rem(30);
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        h3,
+        h5 {
+            color: $primarioscuro;
+        }
+
+        .wp-block-image,
+        .wp-block-gallery,
+        .wp-block-embed,
+        .wp-block-video {
+            margin-top: rem(100);
+            margin-bottom: rem(100);
+        }
+    }
+}
+
+.single-dcp_jobs {
+    .title-page {
+        margin-bottom: rem(120);
+    }
+
+    .jobs__content {
+        &>*:last-child {
+            margin-bottom: 0;
+        }
+
+        @media #{$underlarge} {
+            order: 2;
+        }
+    }
+
+    .jobs__sidebar {
+        @media #{$underlarge} {
+            &:last-child {
+                margin-bottom: 2rem !important;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: rem(60);
+
+            li {
+                margin-bottom: rem(20);
+            }
+
+            p {
+                margin-bottom: 0;
+
+                strong {
+                    color: $primario;
+                }
+            }
+        }
+    }
+}
+
+.related {
+    margin-top: rem(170);
+
+    .related__title {
+        color: $primario;
+        margin-bottom: rem(80);
+    }
+}
+
+.category-list,
+.tags-list {
+    margin-top: rem(100);
+    margin-bottom: rem(100);
+
+    h3 {
+        font-size: 1.6666666667rem;
+        color: $primarioscuro;
+    }
+
+    a {
+        display: inline-block;
+        color: $bianco;
+        background-color: $primario;
+        border-radius: 2rem;
+        padding: 5px 15px;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $bianco;
+            background-color: $primarioscuro;
+        }
+    }
+}

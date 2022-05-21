@@ -1,0 +1,11 @@
+.wp-block-embed__wrapper {
+    &>* {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.wp-block-embed iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}

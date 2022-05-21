@@ -1,0 +1,58 @@
+/*
+Theme Name: Digitally
+Theme URI: https://digitally.omarfolgheraiter.it/
+Author: Omar Folgheraiter
+Author URI: https://omarfolgheraiter.it/
+Description: Digitally is powerful Gutenberg-first WordPress theme, super-optimized for digital businesses and it allow to build beautifully rich websites with WordPress. With Digitally Theme and Digitally Custom Posts Plugin you can easily publish your best projects on the portfolio section, you can manage and publish your jobs offers, you can add and show the team members of your agency, if you want you can manage and show the testimonials of your happiest customers and finally you can manage and show the list of your services with the icons of Font Awesome. The theme is fully responsive and is translation ready. Digitally is available in Italian and English.
+Version: 1.0.8
+Tested up to: 5.8
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: portfolio, blog, one-column, block-patterns, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, translation-ready, block-styles, wide-blocks
+Text Domain: digitally
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+// Abstract
+@import "assets/css/abstract/functions";
+@import "assets/css/abstract/mixins";
+@import "assets/css/abstract/variable";
+
+// Base
+@import "assets/css/base/base";
+@import "assets/css/base/helpers";
+@import "assets/css/base/typography";
+@import "assets/css/base/colors";
+
+// Component
+@import "assets/css/component/pagination";
+@import "assets/css/component/button";
+@import "assets/css/component/cards";
+@import "assets/css/component/form";
+@import "assets/css/component/embed";
+@import "assets/css/component/gallery";
+
+// Gutenberg
+@import "assets/css/gutenberg/block-latestpost";
+@import "assets/css/gutenberg/block-comments";
+@import "assets/css/gutenberg/block-embedded";
+@import "assets/css/gutenberg/block-file";
+@import "assets/css/gutenberg/block-button";
+@import "assets/css/gutenberg/block-cover";
+@import "assets/css/gutenberg/block-image";
+@import "assets/css/gutenberg/block-mediatext";
+@import "assets/css/gutenberg/colonne";
+
+// Layout
+@import "assets/css/layout/header";
+@import "assets/css/layout/footer";
+@import "assets/css/layout/comment";
+
+// Template
+@import "assets/css/template/page";
+@import "assets/css/template/single";
+@import "assets/css/template/404";

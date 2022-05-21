@@ -1,0 +1,36 @@
+.wp-block-latest-posts {
+    time {
+        margin-top: 0 !important;
+        font-size: rem(15) !important;
+        margin-left: rem(15);
+    }
+
+    li {
+        margin-bottom: rem(10);
+        font-size: rem(18);
+    }
+}
+
+.wp-block-latest-posts.is-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    li {
+        background: #f4f4f4;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-radius: rem(15);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        font-size: rem(18);
+        margin-right: 2%;
+
+        time {
+            font-size: rem(15);
+            margin-top: rem(15) !important;
+            margin-left: 0;
+        }
+    }
+}

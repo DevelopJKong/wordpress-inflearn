@@ -1,0 +1,33 @@
+::selection {
+  background-color: #000000;
+  color: white;
+}
+
+.wp-block[data-align=wide] {
+  max-width: 88%;
+}
+
+.wp-block[data-align=full],
+.wp-block[data-title="Sezione home"] {
+  max-width: none;
+}
+
+.is-root-container>.wp-block {
+}
+
+.editor-post-title {
+  max-width: 580px;
+}
+
+.wp-block-group {
+  border-radius: 0 !important;
+}
+
+body,
+html {
+  overflow-x: unset !important;
+}
+
+div {
+  max-width: inherit;
+}

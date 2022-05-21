@@ -1,0 +1,176 @@
+.main-content,
+#footer,
+main {
+    label {
+        display: block !important;
+        color: $primarioscuro !important;
+        margin-bottom: rem(10) !important;
+        font-size: rem(15) !important;
+        font-weight: 700 !important;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=search],
+    input[type=url],
+    textarea {
+        font-size: rem(20) !important;
+        padding: rem(10) !important;
+        border-radius: rem(10) !important;
+        color: $primario !important;
+        width: 100% !important;
+        border-color: $primario !important;
+        border-top-color: $primario !important;
+        border-left-color: $primario !important;
+        font-family: $font !important;
+        background-color: $bianco !important;
+        -o-border-image: none !important;
+           border-image: none !important;
+        box-sizing: border-box !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+
+        &:focus {
+            outline: none !important;
+            border-color: $primarioscuro !important;
+        }
+    }
+
+    input[type=submit],
+    button[type=submit],
+    input[type=button] {
+        display: inline-block !important;
+        background-color: $primario !important;
+        border-radius: rem(35) !important;
+        color: $bianco !important;
+        padding: rem(10) rem(20) !important;
+        font-size: rem(15) !important;
+        text-transform: uppercase !important;
+        border: 0 !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        width: 100% !important;
+
+        &:hover {
+            background-color: $primarioscuro !important;
+            color: $bianco !important;
+        }
+    }
+
+    button[type=submit] {
+        width: auto !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        background-color: $primario !important;
+        border: 0 !important;
+        color: $bianco !important;
+        appearance: none !important;
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+
+        &:hover {
+            background-color: $primarioscuro !important;
+            color: $bianco !important;
+        }
+    }
+
+    input[type=radio] {
+        margin-top: 0 !important;
+    }
+
+    .comment-form-cookies-consent {
+        display: flex !important;
+        align-items: center !important;
+
+        label {
+            margin-bottom: 0 !important;
+            margin-left: rem(10) !important;
+        }
+    }
+
+    .select2-container--open .select2-dropdown--below {
+        border-top: 1px solid #aaa !important;
+    }
+
+    .select2-container--default .select2-selection--single,
+    select {
+        padding: 0.5rem !important;
+        height: auto !important;
+        border-color: $primario !important;
+        font-size: 1rem !important;
+        color: $primario !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        border-radius: 0.5rem !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: $primario !important;
+        padding-left: 0 !important;
+        font-weight: 400 !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 100% !important;
+    }
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: $primario !important;
+    }
+
+    .post-password-form {
+        input {
+            margin-top: 1rem !important;
+        }
+    }
+
+    .wpcf7-checkbox,
+    .wpcf7-radio {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 0.5rem !important;
+
+        .wpcf7-list-item {
+            margin-left: 0 !important;
+        }
+    }
+
+    .nf-form-content .listselect-wrap .nf-field-element div,
+    .nf-form-content select.ninja-forms-field:not([multiple]) {
+        height: 100%;
+        background: transparent !important;
+        border: 0;
+
+        &:after {
+            height: 100%;
+            line-height: 2rem;
+        }
+    }
+
+    .nf-before-form-content {
+        margin-bottom: 3rem;
+    }
+}
+
+#footer {
+    form {
+        margin-bottom: 2rem;
+    }
+
+    label {
+        color: $bianco !important;
+    }
+
+    button[type=submit] {
+        &:hover {
+            background: $bianco !important;
+            color: $primario !important;
+        }
+    }
+}
+
+.nf-error.field-wrap .nf-field-element:after {
+    border-radius: rem(10) !important;
+}

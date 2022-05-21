@@ -1,0 +1,315 @@
+html {
+    font-size: (map-get($font-size, full)*100vw)/1920;
+
+    @media #{$underlarge} {
+        font-size: map-get($font-size, mobile)*1px;
+    }
+}
+
+body {
+    background-color: $bianco;
+    font-family: $font;
+    font-size: rem(20);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontsecondario;
+    margin-bottom: rem(30);
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: rem(80);
+    line-height: 1.18;
+    color: $primario;
+
+    @media #{$underlarge} {
+        font-size: rem(60);
+    }
+}
+
+h2 {
+    font-size: rem(60);
+    color: $primario;
+    line-height: 1.25;
+
+    &.has-normal-font-size {
+        font-size: rem(40);
+        font-weight: 600;
+    }
+
+    @media #{$underlarge} {
+        font-size: rem(50);
+    }
+}
+
+h3 {
+    font-size: rem(40);
+    line-height: 1.28;
+    color: $nero;
+}
+
+h4 {
+    font-size: rem(32);
+    line-height: 1.25;
+    color: $primario;
+}
+
+h5 {
+    font-size: rem(25);
+    line-height: 1.25;
+    color: $primario;
+}
+
+h6 {
+    font-size: rem(20);
+    line-height: 1.25;
+    color: $primario;
+}
+
+p,
+div {
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $nero;
+    margin-bottom: rem(30);
+
+    @media #{underlarge} {
+        font-size: rem(27);
+    }
+}
+
+div {
+    margin: 0;
+    margin-bottom: 0;
+}
+
+address {
+    font-style: normal;
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $nero;
+    margin-bottom: rem(30);
+}
+
+time,
+.time {
+    font-size: rem(20);
+    color: $nero;
+}
+
+blockquote,
+.wp-block-quote {
+    margin-top: rem(50);
+    margin-bottom: rem(100) !important;
+    padding-left: rem(50);
+    border-left: 1px solid $primario;
+    padding-top: rem(5);
+    padding-bottom: rem(5);
+
+    p {
+        font-size: rem(30);
+        line-height: 1.26;
+        color: $primarioscuro;
+        margin-bottom: rem(30);
+    }
+
+    cite {
+        color: $nero;
+        font-size: rem(20);
+        font-style: normal;
+    }
+
+    *:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    &.has-text-align-right {
+        padding-left: rem(0);
+        padding-right: rem(50);
+        border-left: 0px solid $primario;
+        border-right: 1px solid $primario;
+    }
+
+    .wp-block-pullquote & {
+        border-right: 1px solid $primario;
+        padding-right: rem(50);
+    }
+
+    figure & {
+        margin-bottom: 0 !important;
+        margin-top: 0;
+    }
+}
+
+main {
+
+    ul,
+    ol {
+        padding-left: rem(35);
+        font-size: rem(20);
+        line-height: 1.5;
+        color: $nero;
+        margin-bottom: rem(30);
+
+        ul,
+        ol {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: $primario;
+
+        &:hover {
+            color: $nero;
+        }
+    }
+}
+
+.title-page {
+    margin: rem(140) 0;
+    margin-top: rem(80);
+    text-align: center;
+}
+
+.has-medium-font-size {
+    font-size: rem(30) !important;
+}
+
+.has-large-font-size {
+    font-size: rem(40) !important;
+
+    @media #{$underlarge} {
+        font-size: rem(35) !important;
+    }
+}
+
+table {
+    border: 1px solid $primarioscuro;
+    margin-bottom: 2rem;
+    font-size: rem(20);
+    line-height: 1.5;
+
+    td,
+    th {
+        border: 1px solid $primarioscuro;
+        padding: 1rem;
+    }
+
+    thead {
+        background-color: $primarioscuro;
+
+        th {
+            border-color: $bianco;
+            color: $bianco;
+        }
+    }
+}
+
+#footer {
+    .wp-block-calendar {
+        #wp-calendar {
+            margin-bottom: 0.8rem;
+            color: $bianco;
+
+            caption {
+                color: $bianco;
+                font-size: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+
+            tbody {
+                color: $bianco;
+            }
+
+            th {
+                background: $primario;
+            }
+        }
+
+        nav {
+            color: $bianco;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+dl {
+    font-size: rem(20);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+    dt {
+        font-weight: 600;
+    }
+
+    dd {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+pre {
+    font-family: monospace;
+    margin-bottom: rem(30);
+    line-break: normal;
+    line-height: 1.4;
+    line-break: strict;
+    overflow: auto;
+
+    cite {
+        margin-bottom: rem(20);
+        display: inline-block;
+    }
+}
+
+q {
+    font-style: italic;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smalle
+}
+
+tt,
+code {
+    font-family: monospace;
+}
+
+var {
+    font-style: italic;
+}
+
+ins {
+    background-color: $primario;
+    color: $bianco
+}
+
+.wp-caption-text,
+figcaption {
+    font-size: rem(16);
+    margin-top: rem(10);
+    line-height: 1.4;
+    color: $nero;
+}

@@ -1,0 +1,42 @@
+.no-margin {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: rem(30);
+    clear: both;
+    margin-top: 0 !important;
+}
+
+.alignright {
+    float: right;
+    margin-left: rem(30);
+    clear: both;
+    margin-top: 0 !important;
+}
+
+.is-style-squared {
+    a {
+        border-radius: 0;
+    }
+}
+
+div.has-background {
+    padding: rem(30);
+    border-radius: rem(20);
+
+    & > div > *:last-child {
+        margin-bottom: 0;
+    }
+}

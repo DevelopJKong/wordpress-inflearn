@@ -1,0 +1,7 @@
+@function rem($someNumber) {
+    @return ($someNumber / map-get($font-size, full))+rem;
+}
+
+@function spacing($spacing) {
+    @return ($spacing / 1000) * 1em;
+}

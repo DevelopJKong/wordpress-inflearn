@@ -1,0 +1,49 @@
+.page {
+    .alignfull {
+        margin-left: calc(-7.5rem - .5rem);
+        width: 100vw;
+        max-width: none;
+        border-radius: 0;
+
+        @media #{$underlarge} {
+            margin-left: calc(1.5rem * -.5);
+        }
+
+        &>div {
+            max-width: 85%;
+            margin: 0 auto;
+
+            @media #{$underlarge} {
+                max-width: none;
+            }
+        }
+
+        &.wpls-logo-showcase-slider-wrp>div {
+            max-width: 100%;
+        }
+    }
+
+    div.has-background {
+        padding-top: rem(100);
+        padding-bottom: rem(100);
+    }
+
+    .page-content>.col-12>.wp-block-columns,
+    .page-content>.col-12>.wp-block-group {
+        margin-bottom: rem(200);
+        margin-top: rem(200);
+
+        @media #{$underlarge} {
+            margin-bottom: rem(100);
+            margin-top: rem(100);
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

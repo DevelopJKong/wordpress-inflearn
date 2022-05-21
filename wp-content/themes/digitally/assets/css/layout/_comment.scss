@@ -1,0 +1,112 @@
+.comments {
+    margin-top: rem(100);
+
+    .comments-area {
+        &>h2 {
+            font-size: rem(40);
+        }
+
+        .comment-list {
+            list-style: none;
+            padding: 0;
+
+            & li>ol {
+                padding-left: rem(30);
+                list-style: none;
+            }
+
+            .comment-body {
+                padding: rem(30);
+                background-color: $primario;
+                border-radius: rem(16);
+                margin: rem(15) 0;
+                font-size: rem(20);
+                line-height: 1.5;
+                color: $bianco;
+
+                * {
+                    color: $bianco !important;
+                }
+
+                a {
+                    color: $primarioscuro !important;
+
+                    &:hover {
+                        color: $bianco !important;
+                    }
+                }
+
+                blockquote {
+                    border-color: $bianco;
+                }
+
+                img {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+            }
+
+            .comment-awaiting-moderation {
+                font-size: rem(16);
+                line-height: 1.3;
+                margin-bottom: rem(15);
+                display: inline-block;
+            }
+
+            .comment-author {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: rem(20);
+                margin-bottom: rem(10);
+
+                cite,
+                span {
+                    font-style: normal;
+                }
+
+                cite {
+                    display: inline-block;
+                    margin-right: rem(8);
+                }
+
+                img {
+                    height: rem(45);
+                    width: auto;
+                    border-radius: 50%;
+                    margin-right: rem(10);
+                    border: 2px solid $bianco;
+                }
+            }
+
+            .comment-meta {
+                font-size: rem(15);
+                margin-bottom: rem(20);
+            }
+
+            .reply {
+                margin-top: rem(30);
+            }
+        }
+
+        .comment-respond {
+            margin-top: rem(80);
+
+            h3 {
+                font-size: rem(30);
+                color: $primarioscuro;
+
+                small {
+                    font-size: 0.8rem;
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+
+            .comment-notes {
+                font-size: rem(15);
+            }
+        }
+    }
+}

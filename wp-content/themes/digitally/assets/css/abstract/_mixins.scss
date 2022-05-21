@@ -1,0 +1,14 @@
+//SPACING
+
+@mixin trans ($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+@mixin animation ($second: 0.4s, $propriety: all, $delay: 0) {
+    -webkit-transition: $propriety $second $bezier;
+    -moz-transition: $propriety $second $bezier;
+    -o-transition: $propriety $second $bezier;
+    transition: $propriety $second $bezier;
+}
