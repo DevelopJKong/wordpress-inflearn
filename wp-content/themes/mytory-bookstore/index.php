@@ -1,7 +1,20 @@
-<?php
-echo "<pre>";
-//var_dump(get_post_type_archive_link('book'));
+<?php get_header(); ?>
 
-/** @var TYPE_NAME $wp_query */
-var_dump($wp_query);
-echo "</pre>";
+<ul>
+<?php if(have_posts()) : ?>
+    <?php while(have_posts()) :
+        the_post();
+    ?>
+        <li>
+            <a href="<?php the_permalink();?>">
+            <?php the_title(); ?>
+            </a>
+        </li>
+
+    <?php endwhile;?>
+<?php endif; ?>
+</ul>
+
+
+
+<?php get_footer();?>
